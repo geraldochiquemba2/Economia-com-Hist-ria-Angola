@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Relatórios - Economia com História">
+        <title>Relatórios de Engajamento - EH Angola</title>
+
+        <!-- CSS FILES -->                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+        
+        <style>
+            .chart-bar {
+                height: 200px;
+                background: #f8f9fa;
+                border-radius: 10px;
+                display: flex;
+                align-items: flex-end;
+                padding: 20px;
+                gap: 15px;
+            }
+            .bar {
+                flex: 1;
+                background: var(--primary-color);
+                border-radius: 5px 5px 0 0;
+                transition: height 1s ease;
+                position: relative;
+            }
+            .bar:hover { filter: brightness(1.2); }
+            .bar::after {
+                content: attr(data-label);
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 10px;
+                color: #666;
+            }
+        </style>
+    </head>
+    
+    <body class="bg-light">
+        <main>
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <i class="bi-book-half" style="font-size: 2.2rem; color: #FF5E7D; margin-right: 12px;"></i>
+                        <span class="navbar-brand-text text-dark">
+                            Economia
+                            <small class="text-muted">com História – Angola</small>
+                        </span>
+                    </a>
+                    
+                    <a href="admin.html" class="btn btn-outline-secondary ms-auto"><i class="bi-arrow-left me-2"></i>Voltar ao Painel</a>
+                </div>
+            </nav>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-6">
+                            <h2>Analytics & Engajamento</h2>
+                            <p class="text-muted">Relatório detalhado sobre o uso da plataforma em Angola.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Gráfico de Atividade Semanal -->
+                        <div class="col-lg-8 mb-4">
+                            <div class="custom-block robust-card bg-white p-5 shadow-sm h-100">
+                                <h4 class="mb-4">Logins Diários (Última Semana)</h4>
+                                <div class="chart-bar mt-5">
+                                    <div class="bar" style="height: 40%;" data-label="SEG"></div>
+                                    <div class="bar" style="height: 65%;" data-label="TER"></div>
+                                    <div class="bar" style="height: 55%;" data-label="QUA"></div>
+                                    <div class="bar" style="height: 90%;" data-label="QUI"></div>
+                                    <div class="bar" style="height: 75%;" data-label="SEX"></div>
+                                    <div class="bar" style="height: 30%;" data-label="SAB"></div>
+                                    <div class="bar" style="height: 20%;" data-label="DOM"></div>
+                                </div>
+                                <div class="mt-5 text-center">
+                                    <p class="mb-0 small text-muted"><i class="bi-info-circle me-2"></i>Picos de acesso ocorrem às quintas-feiras após o lançamento de novos microtextos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Estatísticas -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="row h-100">
+                                <div class="col-12 mb-4">
+                                    <div class="custom-block robust-card bg-dark text-white p-4 text-center">
+                                        <h2 class="mb-1 text-primary">85%</h2>
+                                        <p class="mb-0 small text-uppercase" style="letter-spacing: 1px;">Taxa de Retenção</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="custom-block robust-card bg-white p-4 text-center">
+                                        <h2 class="mb-1" style="color: var(--primary-color);">4.2m</h2>
+                                        <p class="mb-0 small text-muted text-uppercase" style="letter-spacing: 1px;">Minutos Estudados</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-block robust-card bg-white p-4 text-center">
+                                        <h2 class="mb-1">12.5k</h2>
+                                        <p class="mb-0 small text-muted text-uppercase" style="letter-spacing: 1px;">Respostas em Quiz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tabela de Desempenho por Região -->
+                        <div class="col-12 mt-4">
+                            <div class="custom-block robust-card bg-white p-5 shadow-sm">
+                                <h4 class="mb-4">Desempenho por Província</h4>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th>Província</th>
+                                                <th>Estudantes</th>
+                                                <th>Acertos Quiz (Méd.)</th>
+                                                <th>Engajamento</th>
+                                                <th>Tendência</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Luanda</strong></td>
+                                                <td>850</td>
+                                                <td>82%</td>
+                                                <td>Alta</td>
+                                                <td><i class="bi-arrow-up-right text-success"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Benguela</strong></td>
+                                                <td>320</td>
+                                                <td>75%</td>
+                                                <td>Média</td>
+                                                <td><i class="bi-arrow-right text-warning"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Huambo</strong></td>
+                                                <td>210</td>
+                                                <td>68%</td>
+                                                <td>Média</td>
+                                                <td><i class="bi-arrow-down-right text-danger"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

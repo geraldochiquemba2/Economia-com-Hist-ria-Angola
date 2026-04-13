@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Quiz Interativo - Economia com História">
+        <meta name="author" content="Economia com História">
+
+        <title>Quiz - Economia com História</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <main>
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <i class="bi-book-half" style="font-size: 2.2rem; color: #FF5E7D; margin-right: 12px;"></i>
+                        <span class="navbar-brand-text">
+                            Economia
+                            <small>com História – Angola</small>
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Área do Aluno</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="explorar.html">Explorar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="quiz.html">Quiz</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum.html">Fórum</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarProfileDropdown">
+                                    <li><a class="dropdown-item" href="admin.html">Administrador</a></li>
+                                    <li><a class="dropdown-item" href="perfil.html">Utilizador</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="hero-section hero-admin d-flex justify-content-center align-items-center" id="section_1">
+                <div class="section-overlay"></div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#333333" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+                    <path fill="none" stroke="#FF5E7D" stroke-width="3" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96"></path>
+                </svg>
+
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col-12 mt-3 mt-md-0">
+                            <h1 class="text-white mb-0">Quiz Interativo</h1>
+                            <p class="text-white mt-3 opacity-75">Teste os seus conhecimentos e suba no ranking da universidade.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                    <path fill="none" stroke="#FF5E7D" stroke-width="3" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96"></path>
+                </svg>
+            </section>
+
+            <section class="section-padding" style="background-color: #f9f9f9;" id="quiz-container">
+                <div class="container">
+                    <!-- ESTADO 1: PERGUNTA (Visível por Defeito) -->
+                    <div id="quiz-question-view">
+                        <div class="row mb-4">
+                            <div class="col-lg-10 col-12 mx-auto">
+                                <div class="quiz-header d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <a href="index.html" class="text-dark me-3"><i class="bi-arrow-left" style="font-size: 1.5rem;"></i></a>
+                                        <h5 class="mb-0">Quiz — Pergunta <span id="current-q">2</span> de 10</h5>
+                                    </div>
+                                    <div class="quiz-timer">
+                                        <i class="bi-clock-fill me-2"></i> <span id="timer-val">02:00</span>
+                                    </div>
+                                </div>
+                                <div class="quiz-progress-bar-container">
+                                    <div class="quiz-progress-bar-fill" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-lg-8 col-12 mx-auto">
+                                <h2 class="mb-5 fw-bold" style="line-height: 1.4;">Que sector liderou o crescimento económico angolano entre 2005 e 2014?</h2>
+                                
+                                <div class="quiz-options-list">
+                                    <button class="quiz-option" data-ans="A">
+                                        <span class="quiz-option-letter">A</span>
+                                        <span class="quiz-option-text">Agricultura</span>
+                                    </button>
+
+                                    <button class="quiz-option active" data-ans="B">
+                                        <span class="quiz-option-letter">B</span>
+                                        <span class="quiz-option-text">Petróleo e Gás</span>
+                                    </button>
+
+                                    <button class="quiz-option" data-ans="C">
+                                        <span class="quiz-option-letter">C</span>
+                                        <span class="quiz-option-text">Turismo</span>
+                                    </button>
+
+                                    <button class="quiz-option" data-ans="D">
+                                        <span class="quiz-option-letter">D</span>
+                                        <span class="quiz-option-text">Tecnologia</span>
+                                    </button>
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button id="btn-confirm-quiz" class="btn custom-btn px-5 py-3 w-100">Confirmar Resposta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ESTADO 2: RESULTADO (Escondido por Defeito) -->
+                    <div id="quiz-result-view" style="display: none;">
+                        <div class="row text-center mt-5">
+                            <div class="col-lg-8 col-12 mx-auto">
+                                <div class="mb-4">
+                                    <i class="bi-trophy" style="font-size: 5rem; color: #D4AF37;"></i>
+                                </div>
+                                <h1 class="display-4 fw-bold mb-3">Parabéns!</h1>
+                                <p class="lead mb-5 opacity-75">Você completou o quiz com sucesso.</p>
+
+                                <div class="circular-progress-wrap mb-5">
+                                    <svg class="circular-progress-svg" viewBox="0 0 150 150">
+                                        <circle class="circular-progress-bg" cx="75" cy="75" r="70"></circle>
+                                        <circle class="circular-progress-bar" cx="75" cy="75" r="70" style="stroke-dashoffset: 132;"></circle>
+                                    </svg>
+                                    <div class="circular-progress-text">
+                                        <span class="display-5 fw-bold">7</span><span class="text-muted">/10</span>
+                                        <div class="text-uppercase small fw-bold" style="font-size: 10px; letter-spacing: 1px;">Correctas</div>
+                                    </div>
+                                </div>
+
+                                <div class="d-inline-flex align-items-center bg-dark text-white rounded-pill px-4 py-2 mb-5" style="background-color: #1a1a1a !important; border: 1px solid #D4AF37;">
+                                    <i class="bi-award-fill text-warning me-2"></i>
+                                    <span class="small fw-bold">Acima da média nacional (65%)</span>
+                                </div>
+
+                                <p class="mb-5 px-lg-5">Excelente desempenho! Continue a explorar os nossos conteúdos para aprofundar ainda mais o seu conhecimento.</p>
+
+                                <div class="d-grid gap-3 col-lg-8 mx-auto">
+                                    <button class="btn custom-btn py-3"><i class="bi-trophy-fill me-2"></i> Ver Ranking</button>
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <button class="btn custom-btn custom-border-btn w-100 py-3" onclick="location.reload()"><i class="bi-arrow-repeat me-2"></i> Refazer</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="explorar.html" class="btn custom-btn custom-border-btn w-100 py-3"><i class="bi-search me-2"></i> Explorar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <i class="bi-book-half" style="font-size: 2.2rem; color: #FF5E7D; margin-right: 12px;"></i>
+                            <span class="navbar-brand-text">
+                                Economia
+                                <small>com História – Angola</small>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h5 class="site-footer-title mb-4">Área do Aluno</h5>
+                        <p class="copyright-text">Dúvidas? <a href="forum.html">Visite o Fórum</a></p>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#6B0F1A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                <path fill="none" stroke="#FF5E7D" stroke-width="3" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96"></path>
+            </svg>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/simulations.js"></script>
+    </body>
+</html>

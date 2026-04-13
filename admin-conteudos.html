@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Gestão de Conteúdos - Economia com História">
+        <title>Gestão de Conteúdos - EH Angola</title>
+
+        <!-- CSS FILES -->                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+    </head>
+    
+    <body class="bg-light">
+        <main>
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <i class="bi-book-half" style="font-size: 2.2rem; color: #FF5E7D; margin-right: 12px;"></i>
+                        <span class="navbar-brand-text text-dark">
+                            Economia
+                            <small class="text-muted">com História – Angola</small>
+                        </span>
+                    </a>
+                    
+                    <a href="admin.html" class="btn btn-outline-secondary ms-auto"><i class="bi-arrow-left me-2"></i>Voltar ao Painel</a>
+                </div>
+            </nav>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row mb-5 align-items-center">
+                        <div class="col-lg-6">
+                            <h2 class="mb-0">Gestão de Biblioteca</h2>
+                            <p class="text-muted">Gira as lições, vídeos e podcasts disponíveis na plataforma.</p>
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#modalNovoConteudo">
+                                <i class="bi-plus-circle me-2"></i>Novo Conteúdo
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="custom-block robust-card bg-white p-0 overflow-hidden shadow-sm">
+                                <div class="p-4 bg-white border-bottom">
+                                    <div class="d-flex gap-2">
+                                        <button class="btn btn-dark btn-sm">Todos</button>
+                                        <button class="btn btn-outline-dark btn-sm">Vídeos</button>
+                                        <button class="btn btn-outline-dark btn-sm">Microtextos</button>
+                                        <button class="btn btn-outline-dark btn-sm">Podcasts</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle mb-0">
+                                        <thead class="bg-dark text-white">
+                                            <tr>
+                                                <th class="ps-4">Título do Conteúdo</th>
+                                                <th>Tipo</th>
+                                                <th>Categoria</th>
+                                                <th>Visualizações</th>
+                                                <th>Likes</th>
+                                                <th class="text-end pe-4">Ações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="ps-4">
+                                                    <div class="fw-bold">Evolução do Kwanza (1990-2024)</div>
+                                                    <small class="text-muted">Publicado em 12 Out 2023</small>
+                                                </td>
+                                                <td><i class="bi-play-circle-fill text-danger me-2"></i>Vídeo</td>
+                                                <td><span class="badge bg-secondary">Economia</span></td>
+                                                <td><strong>4.250</strong></td>
+                                                <td>1.120</td>
+                                                <td class="text-end pe-4">
+                                                    <button class="btn btn-sm btn-outline-primary"><i class="bi-pencil"></i></button>
+                                                    <button class="btn btn-sm btn-outline-danger"><i class="bi-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ps-4">
+                                                    <div class="fw-bold">O Impacto do Petróleo no PIB</div>
+                                                    <small class="text-muted">Publicado em 08 Out 2023</small>
+                                                </td>
+                                                <td><i class="bi-file-earmark-text-fill text-primary me-2"></i>Texto</td>
+                                                <td><span class="badge bg-secondary">Macroeconomia</span></td>
+                                                <td><strong>2.100</strong></td>
+                                                <td>850</td>
+                                                <td class="text-end pe-4">
+                                                    <button class="btn btn-sm btn-outline-primary"><i class="bi-pencil"></i></button>
+                                                    <button class="btn btn-sm btn-outline-danger"><i class="bi-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ps-4">
+                                                    <div class="fw-bold">Entrevista: História Económica</div>
+                                                    <small class="text-muted">Publicado em 01 Out 2023</small>
+                                                </td>
+                                                <td><i class="bi-mic-fill text-warning me-2"></i>Podcast</td>
+                                                <td><span class="badge bg-secondary">História</span></td>
+                                                <td><strong>1.800</strong></td>
+                                                <td>620</td>
+                                                <td class="text-end pe-4">
+                                                    <button class="btn btn-sm btn-outline-primary"><i class="bi-pencil"></i></button>
+                                                    <button class="btn btn-sm btn-outline-danger"><i class="bi-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="modal fade" id="modalNovoConteudo" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content robust-card border-0">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title">Novo Conteúdo</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form class="custom-form">
+                            <div class="mb-3">
+                                <label class="form-label">Título</label>
+                                <input type="text" class="form-control" placeholder="Título da lição...">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Tipo de Media</label>
+                                <select class="form-select border-0 bg-light p-3" style="border-radius: 10px;">
+                                    <option>Vídeo (YouTube)</option>
+                                    <option>Podcast (Spotify/Soundcloud)</option>
+                                    <option>Microtexto de Leitura</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Link da Media</label>
+                                <input type="url" class="form-control" placeholder="URL da media...">
+                            </div>
+                            <button type="button" class="btn custom-btn w-100 mt-3">Publicar Biblioteca</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
